@@ -1,15 +1,135 @@
-
 /*-------------------------------------
  * customize material design icon sizes 
  *-------------------------------------
  */
 
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-18 {
+  font-size: 18px;
+}
+.material-icons.md-24 {
+  font-size: 24px;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+}
+.material-icons.md-48 {
+  font-size: 48px;
+}
 
 .responsive {
-    width: 100%;
-    height: auto;
-  }
+  width: 100%;
+  height: auto;
+}
+
+.rounded-circle {
+  width: 100px;
+  height: auto;
+  margin: 0 auto;
+  /* Centers the circle horizontally */
+}
+
+/*
+* --------------------------------------------
+* Custom styles to override the default Bootstrap ones
+* --------------------------------------------
+*/
+
+:root {
+  --text: #e4b7e5;
+  --primary: #79509b;
+  --secondary: #b288c0;
+  --accent: #63458a;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu", sans-serif;
+  /* font-size: 2.25rem; */
+}
+
+.bg-info,
+.navbar-light,
+.navbar {
+  background-color: var(--secondary) !important;
+  color: var(--text);
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link {
+  color: var(--text);
+}
+
+.btn-info {
+  color: var(--text);
+  background-color: var(--secondary);
+  border-color: var(--primary);
+}
+
+.btn-primary {
+  color: var(--text);
+  font-size: 150%;
+  background-color: var(--primary);
+  border-color: var(--accent);
+  border-width: thick;
+}
+
+body,
+.bg-light {
+  background-color: var(--text) !important;
+}
+
+/* Style for radio button labels when not selected */
+.btn-outline-primary {
+  color: var(--primary);
+  border-color: var(--secondary);
+}
+
+/* Style for radio button labels on hover or focus */
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  color: var(--text);
+  background-color: var(--secondary);
+  border-color: var(--primary);
+}
+
+/* Style for the active (checked) radio button label */
+.btn-check:checked + .btn-outline-primary,
+.btn-check:active + .btn-outline-primary {
+  color: var(--text);
+  background-color: var(--primary);
+  border-color: var(--accent);
+}
+
+/* Custom styles for dropdown to match the new color palette */
+
+/* Style for the dropdown button */
+.btn-secondary {
+  color: var(--text);
+  background-color: var(--primary);
+  border-color: var(--secondary);
+}
+
+/* Change dropdown button hover/focus styles */
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: var(--text);
+  background-color: var(--secondary);
+  border-color: var(--primary);
+}
+
+/* Style for the dropdown menu */
+.dropdown-menu {
+  background-color: var(--text);
+  border-color: var(--secondary);
+}
+
+/* Style for dropdown items */
+.dropdown-item {
+  color: var(--primary);
+}
+
+/* Style for dropdown item hover */
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: var(--text);
+  background-color: var(--secondary);
+}
