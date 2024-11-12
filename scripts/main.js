@@ -169,7 +169,7 @@ function displayCardsDynamically(collection) {
         newcard.querySelector(".card-image").src = `./images/${hikeCode}.jpg`; //Example: NV01.jpg
         newcard.querySelector("a").href = "eachHike.html?docID=" + docID;
         newcard.querySelector("i").id = "save-" + docID; //guaranteed to be unique
-        newcard.querySelector("i").onclick = () => saveBookmark(docID);
+        newcard.querySelector("i").onclick = () => updateBookmark(docID);
 
         //Optional: give unique ids to all elements for future use
         // newcard.querySelector('.card-title').setAttribute("id", "ctitle" + i);
@@ -199,7 +199,7 @@ function displayCardsDynamically(collection) {
 // It adds the hike to the "bookmarks" array
 // Then it will change the bookmark icon from the hollow to the solid version.
 //-----------------------------------------------------------------------------
-function saveBookmark(hikeDocID) {
+function updateBookmark(hikeDocID) {
   // Manage the backend process to store the hikeDocID in the database, recording which hike was bookmarked by the user.
   currentUser.get().then((userDoc) => {
     let index = userDoc.data().bookmarks.indexOf(hikeDocID);
