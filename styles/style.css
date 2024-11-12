@@ -133,3 +133,7 @@ body,
   color: var(--text);
   background-color: var(--secondary);
 }
+
+.material-icons {
+  cursor: pointer;
+}
