@@ -1,0 +1,14 @@
+{
+  "name": "myhike_donatelli_giorgio",
+  "version": "1.0.0",
+  "description": "State your app in a nutshell, or one-sentence pitch. Give some elaboration on what the core features are.  \r This browser based web application to ...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase-tools": "^13.27.0"
+  }
+}
